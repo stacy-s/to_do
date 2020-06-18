@@ -22,4 +22,4 @@ class Task(models.Model):
     deadline = models.DateTimeField(verbose_name='deadline')
     priority = models.PositiveSmallIntegerField(verbose_name='priority', blank=False, choices=priority_list)
     is_finished = models.BooleanField(verbose_name='done', default=False)
-    tags = models.ManyToManyField(Tag)
+    # tags = models.ManyToManyField(Tag)
