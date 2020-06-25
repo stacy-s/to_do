@@ -1,0 +1,13 @@
+{% extends 'base.html'%}
+
+{% block title %}
+    {{ block.super }} - create task
+{% endblock %}
+
+{% block content %}
+    <form method="post" class="col-md-6 mb-3 post-form">
+        {%  csrf_token %}
+        {{ form.as_p }}
+        <button class="save btn  btn-primary" type="submit">Save</button>
+    </form>
+{% endblock %}
